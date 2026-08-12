@@ -261,6 +261,10 @@
   }
   .stack-card img{
     opacity: .8;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 100%;
   }
   .stack-card.c1{transform:rotate(-6deg) translate(10px,10px); opacity:.5;}
   .stack-card.c2{transform:rotate(3deg) translate(-6px,-4px); opacity:.75;}
@@ -269,6 +273,7 @@
     display:flex;
     flex-direction:column;
     gap:16px;
+    overflow:hidden;
   }
   .stack-top{
     display:flex;
