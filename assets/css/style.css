@@ -265,6 +265,7 @@
     position: absolute;
     right: 0;
     width: 100%;
+    object-fit: cover;
   }
   .stack-card.c1{transform:rotate(-6deg) translate(10px,10px); opacity:.5;}
   .stack-card.c2{transform:rotate(3deg) translate(-6px,-4px); opacity:.75;}
