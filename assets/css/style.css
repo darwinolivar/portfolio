@@ -465,6 +465,7 @@
   .project-visual .mockframe img{
     height:276px;
     width: 100%;
+    object-fit: cover;  
   }
 
   .project-card:hover .mockframe{transform:translateY(-8px) scale(1.02);}
