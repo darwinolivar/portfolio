@@ -128,6 +128,11 @@ nav {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: -0.01em;
+
+  img {
+    height: 42px;
+    width: auto;
+  }
 }
 .logo span {
   color: var(--accent);
