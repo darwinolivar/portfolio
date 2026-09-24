@@ -1,196 +1,191 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Darwin Olivar — UI/UX &amp; Frontend Developer</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Darwin Olivar — UI/UX Developer and Frontend Developer. I create thoughtful digital experiences and impactful solutions through creativity, strategy, and technology."
     />
+    <meta name="theme-color" content="#0b0d0c" />
+    <title>Darwin Olivar — UI/UX & Frontend Developer</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/script.js"></script>
   </head>
   <body>
-    <header>
-      <nav class="wrap">
-        <a href="#" class="logo">
-          <img src="assets/images/logo.png" alt="Darwin Olivar Logo" />
-        </a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-        </div>
-        <a href="#contact" class="nav-cta">Contact Me</a>
-      </nav>
-    </header>
+    <div class="site-shell">
+      <header class="site-header" data-header>
+        <a class="brand" href="#top" aria-label="Darwin Olivar home"
+          ><span class="brand__mark">DO</span
+          ><span class="brand__name">Darwin<br />Olivar.</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="menu-toggle__label">Menu</span
+          ><span class="menu-toggle__icon"><i></i><i></i></span>
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+          <a class="site-nav__link" href="#about">About <span>01</span></a>
+          <a class="site-nav__link" href="#work">Work <span>02</span></a>
+          <a class="site-nav__link" href="#skills">Skills <span>03</span></a>
+          <a class="site-nav__link" href="#experience"
+            >Experience <span>04</span></a
+          >
+          <a class="site-nav__link site-nav__link--outline" href="#contact"
+            >Contact Me <span>↗</span></a
+          >
+        </nav>
+      </header>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero-bg">
-          <div class="grid-layer"></div>
-          <div class="glow"></div>
-          <div class="glow-2"></div>
-        </div>
-        <div class="wrap hero-inner">
-          <div class="fade-in visible">
-            <div class="eyebrow hero-eyebrow">Portfolio — 2026</div>
-            <h1>Darwin<br />Olivar<span class="accent">.</span></h1>
-            <div class="hero-role">
-              UI/UX Developer
-              <span class="sep">/</span> Frontend Developer
-            </div>
-            <p class="hero-desc">
+      <main id="top">
+        <section class="hero section-grid" aria-labelledby="hero-title">
+          <div class="hero__rail">
+            <span>PORTFOLIO — 2026</span><span class="hero__rail-line"></span>
+          </div>
+          <div class="hero__content">
+            <p class="eyebrow hero__eyebrow">
+              UI/UX DEVELOPER <b>/</b> FRONTEND DEVELOPER
+            </p>
+            <h1 class="hero__title" id="hero-title">
+              <span>Darwin</span
+              ><span>Olivar<span class="hero__period">.</span></span>
+            </h1>
+            <p class="hero__intro">
               I create thoughtful digital experiences and impactful solutions
               through creativity, strategy, and technology.
             </p>
-            <div class="hero-actions">
-              <a href="#work" class="btn btn-primary">View My Work</a>
-              <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            <div class="hero__actions">
+              <a class="button button--accent" href="#work"
+                >View My Work <span>↓</span></a
+              ><a class="button button--text" href="#contact"
+                >Contact Me <span>↗</span></a
+              >
             </div>
           </div>
-
-          <div class="hero-visual fade-in visible">
-            <div class="stack-card c1"></div>
-            <div class="stack-card c2"></div>
-            <div class="stack-card c3">
-              <div class="stack-top">
-                <div class="dots"><span></span><span></span><span></span></div>
-                <div class="stack-tag">designing</div>
-              </div>
-
-              <img
-                src="assets/images/photo-no-background.png"
-                alt="Hero Visual"
-              />
-              <!-- <div class="stack-bars">
-                <div class="bar"><span></span></div>
-                <div class="bar"><span></span></div>
-                <div class="bar"><span></span></div>
-              </div>
-              <div class="stack-chart">
-                <i></i><i></i><i></i><i></i><i></i><i></i>
-              </div> -->
+          <div class="hero__visual" aria-label="Abstract visual composition">
+            <div class="hero__visual-top">
+              <span>01 / 01</span
+              ><span class="hero__status"><i></i> designing</span>
             </div>
+            <div class="hero__visual-grid"></div>
+            <div class="hero__visual-note">
+              THOUGHTFUL<br />DIGITAL<br />EXPERIENCES
+            </div>
+            <div class="hero__visual-orbit"></div>
           </div>
-        </div>
-        <div class="scroll-cue">
-          <span>SCROLL</span><span class="scroll-line"></span>
-        </div>
-      </section>
+          <div class="hero__scroll"><span>SCROLL TO EXPLORE</span><i></i></div>
+        </section>
 
-      <!-- ABOUT -->
-      <section id="about">
-        <div class="wrap">
-          <div class="about-grid">
-            <div class="fade-in">
-              <div class="eyebrow">About Me</div>
-              <p class="about-lede">
-                I'm <strong>Darwin Olivar</strong>, a UI/UX Developer and
-                Frontend Developer focused on building intuitive, accessible,
-                and visually engaging digital experiences. Expert in translating
-                complex UI/UX designs into responsive, pixel-perfect frontend
-                architecture using Umbraco CMS, .NET MVC, React.js, and modern
-                web technologies. Proven track record of improving site
-                performance, managing full content lifecycles, and collaborating
-                across cross-functional teams to deliver seamless digital
-                experiences.
+        <section
+          class="about section-grid section"
+          id="about"
+          aria-labelledby="about-title"
+        >
+          <div class="section-marker"><span>01</span><span>ABOUT ME</span></div>
+          <div class="about__copy reveal">
+            <p class="section-kicker">A PRACTICE ROOTED IN CLARITY</p>
+            <h2 id="about-title">
+              I make the complex feel <em>considered.</em>
+            </h2>
+            <p>
+              I'm Darwin Olivar, a UI/UX Developer and Frontend Developer
+              focused on building intuitive, accessible, and visually engaging
+              digital experiences. Expert in translating complex UI/UX designs
+              into responsive, pixel-perfect frontend architecture using Umbraco
+              CMS, .NET MVC, React.js, and modern web technologies. Proven track
+              record of improving site performance, managing full content
+              lifecycles, and collaborating across cross-functional teams to
+              deliver seamless digital experiences.
+            </p>
+          </div>
+          <div class="about__features">
+            <article class="feature reveal">
+              <span class="feature__number">01</span>
+              <h3>End-to-end</h3>
+              <p>
+                From UX research and wireframes to shipped, production-ready
+                front-end code
               </p>
-            </div>
-            <div class="about-side fade-in">
-              <div class="about-stat">
-                <div class="num">End-to-end</div>
-                <div class="label">
-                  From UX research and wireframes to shipped, production-ready
-                  front-end code
-                </div>
-              </div>
-              <div class="about-stat">
-                <div class="num">Umbraco &amp; Web</div>
-                <div class="label">
-                  Comfortable across CMS-driven builds and modern JavaScript
-                  frameworks
-                </div>
-              </div>
-              <div class="about-stat">
-                <div class="num">Detail-first</div>
-                <div class="label">
-                  Systems-minded about typography, spacing, and interaction —
-                  never an afterthought
-                </div>
-              </div>
-            </div>
+            </article>
+            <article class="feature reveal">
+              <span class="feature__number">02</span>
+              <h3>Umbraco & Web</h3>
+              <p>
+                Comfortable across CMS-driven builds and modern JavaScript
+                frameworks
+              </p>
+            </article>
+            <article class="feature reveal">
+              <span class="feature__number">03</span>
+              <h3>Detail-first</h3>
+              <p>
+                Systems-minded about typography, spacing, and interaction —
+                never an afterthought
+              </p>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- PROJECTS -->
-      <section id="work">
-        <div class="wrap">
-          <div class="section-head fade-in">
-            <div class="eyebrow">Recent Projects</div>
-            <h2>Selected work, built with intent.</h2>
+        <section class="work section" id="work" aria-labelledby="work-title">
+          <div class="section-grid work__heading">
+            <div class="section-marker">
+              <span>02</span><span>RECENT PROJECTS</span>
+            </div>
+            <div class="work__intro reveal">
+              <p class="section-kicker">SELECTED WORK, BUILT WITH INTENT.</p>
+              <h2 id="work-title">A case-study <em>archive.</em></h2>
+            </div>
+            <p class="work__count">12 projects<br />2011—2026</p>
           </div>
-
-          <div class="project-list">
-            <!-- Featured Project -->
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-13.png" alt="Swish Systems" />
-                  </div>
-                </div>
+          <div class="project-grid">
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-13.png"
+                  alt="Swish Systems project preview"
+                  loading="lazy"
+                /><span class="project__index">01</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Projects</div> -->
-                <h3>Swish Systems</h3>
-                <p>
-                  Swish Systems operates at the exact intersection of
-                  high-stakes sports operations and cutting-edge software
-                  engineering. We help basketball leagues, facilities, and
-                  enterprises optimize workflows, automate administration, and
-                  deliver elite digital experiences to players, fans, and
-                  management.
-                </p>
-                <div class="tag-row">
-                  <span class="tag">UI-UX Design</span>
-                  <span class="tag">Web Development</span>
+              <div class="project__body">
+                <div>
+                  <h3>Swish Systems</h3>
+                  <p>
+                    Swish Systems operates at the exact intersection of
+                    high-stakes sports operations and cutting-edge software
+                    engineering. We help basketball leagues, facilities, and
+                    enterprises optimize workflows, automate administration, and
+                    deliver elite digital experiences to players, fans, and
+                    management.
+                  </p>
                 </div>
-                <div class="project-links">
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>UI-UX Design</span><span>Web Development</span>
+                  </div>
                   <a
+                    class="project__link"
                     href="https://swishsystemsph.com/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo →</a
+                    rel="noreferrer"
+                    >Live Demo <b>↗</b></a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-12.png" alt="Cary Faith" />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-12.png"
+                  alt="Cary Faith project preview"
+                  loading="lazy"
+                /><span class="project__index">02</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Projects</div> -->
+              <div class="project__body">
                 <h3>Cary Faith</h3>
                 <p>
                   Cary Faith is a dynamic talent and rising digital personality
@@ -199,142 +194,121 @@
                   following online. She brings authenticity and style to
                   everything she does.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">UI-UX Design</span>
-                  <span class="tag">Web Development</span>
-                </div>
-                <div class="project-links">
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>UI-UX Design</span><span>Web Development</span>
+                  </div>
                   <a
+                    class="project__link"
                     href="http://caryfaith.com/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo →</a
+                    rel="noreferrer"
+                    >Live Demo <b>↗</b></a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-1.png" alt="M88 Mansion" />
-                  </div>
-                </div>
+            <article class="project project--tall reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-1.png"
+                  alt="M88 Mansion project preview"
+                  loading="lazy"
+                /><span class="project__index">03</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Projects</div> -->
+              <div class="project__body">
                 <h3>M88 Mansion</h3>
                 <p>
                   Online gambling and sports betting platform primarily
                   targeting the Asian market.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">Web Content</span>
-                  <span class="tag">Web Development</span>
-                  <span class="tag">React.js</span>
-                </div>
-                <div class="project-links">
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>Web Content</span><span>Web Development</span
+                    ><span>React.js</span>
+                  </div>
                   <a
+                    class="project__link"
                     href="https://www.m88.com/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo →</a
+                    rel="noreferrer"
+                    >Live Demo <b>↗</b></a
                   >
                 </div>
               </div>
             </article>
 
-            <!-- Project 02 -->
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-2.png" alt="Drake Medox NZ" />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-2.png"
+                  alt="Drake Medox NZ project preview"
+                  loading="lazy"
+                /><span class="project__index">04</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Project 02</div> -->
+              <div class="project__body">
                 <h3>Drake Medox NZ</h3>
                 <p>
                   Drake Medox has been the health and community care recruitment
                   arm of Drake New Zealand, providing quality healthcare workers
                   to hospitals, aged care facilities and for individuals.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">Web Development</span>
-                  <span class="tag">UI-UX Design</span>
-                  <span class="tag">Umbraco CMS</span>
-                </div>
-                <div class="project-links">
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>Web Development</span><span>UI-UX Design</span
+                    ><span>Umbraco CMS</span>
+                  </div>
                   <a
+                    class="project__link"
                     href="https://www.drakemedox.co.nz/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo →</a
+                    rel="noreferrer"
+                    >Live Demo <b>↗</b></a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-4.png" alt="Drake Medox NZ" />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-4.png"
+                  alt="Drake Wellbeinghub project preview"
+                  loading="lazy"
+                /><span class="project__index">05</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Project 02</div> -->
+              <div class="project__body">
                 <h3>Drake Wellbeinghub</h3>
                 <p>
                   Drake WellbeingHub (formally known as Drake WorkWise) has been
                   in operation since 1998, offering organisations across
                   Australia with access to EAP and critical incident services.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">Web Development</span>
-                  <span class="tag">Umbraco CMS</span>
-                </div>
-                <div class="project-links">
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>Web Development</span><span>Umbraco CMS</span>
+                  </div>
                   <a
+                    class="project__link"
                     href="https://drakewellbeinghub.com.au/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo →</a
+                    rel="noreferrer"
+                    >Live Demo <b>↗</b></a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-5.png" alt="Drake P3" />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-5.png"
+                  alt="Drake P3 project preview"
+                  loading="lazy"
+                /><span class="project__index">06</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Project 02</div> -->
+              <div class="project__body">
                 <h3>Drake P3</h3>
                 <p>
                   Drake P3, an online behavioural assessment solution removing
@@ -342,35 +316,30 @@
                   compatibility; so you can get to know people better, faster
                   and smarter.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">Web Development</span>
-                  <span class="tag">Umbraco CMS</span>
-                </div>
-                <div class="project-links">
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>Web Development</span><span>Umbraco CMS</span>
+                  </div>
                   <a
+                    class="project__link"
                     href="https://drakep3.com/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo →</a
+                    rel="noreferrer"
+                    >Live Demo <b>↗</b></a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-6.png" alt="Drake Medox - UK" />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-6.png"
+                  alt="Drake Medox UK project preview"
+                  loading="lazy"
+                /><span class="project__index">07</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Project 02</div> -->
+              <div class="project__body">
                 <h3>Drake Medox - UK</h3>
                 <p>
                   Medox has international offices in Australia and New Zealand,
@@ -379,38 +348,30 @@
                   and Disability Support workers, for temporary and permanent
                   assignments, 24 hours a day, 7 days a week.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">Web Development</span>
-                  <span class="tag">Umbraco CMS</span>
-                </div>
-                <div class="project-links">
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>Web Development</span><span>Umbraco CMS</span>
+                  </div>
                   <a
+                    class="project__link"
                     href="https://drakemedox.co.uk/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo →</a
+                    rel="noreferrer"
+                    >Live Demo <b>↗</b></a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img
-                      src="assets/images/img-7.png"
-                      alt="Drake Business Logistics"
-                    />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-7.png"
+                  alt="Drake Business Logistics project preview"
+                  loading="lazy"
+                /><span class="project__index">08</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Project 02</div> -->
+              <div class="project__body">
                 <h3>Drake Business Logistics</h3>
                 <p>
                   Drake Business Logistics helps businesses in Australia focus
@@ -418,35 +379,30 @@
                   time-consuming business functions to improve efficiency, drive
                   down cost, and enhance service quality.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">Web Development</span>
-                  <span class="tag">Umbraco CMS</span>
-                </div>
-                <div class="project-links">
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>Web Development</span><span>Umbraco CMS</span>
+                  </div>
                   <a
+                    class="project__link"
                     href="https://dbla.com.au/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    >Live Demo →</a
+                    rel="noreferrer"
+                    >Live Demo <b>↗</b></a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-8.png" alt="Vertical Talent" />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-8.png"
+                  alt="Vertical Talent project preview"
+                  loading="lazy"
+                /><span class="project__index">09</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Project 02</div> -->
+              <div class="project__body">
                 <h3>Vertical Talent</h3>
                 <p>
                   Vertical Talent is a recruitment agency that specializes in
@@ -455,27 +411,24 @@
                   solutions to meet the unique needs of both clients and
                   candidates.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">UI-UX Design & Development</span>
-                  <span class="tag">Umbraco CMS</span>
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>UI-UX Design & Development</span
+                    ><span>Umbraco CMS</span>
+                  </div>
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-11.png" alt="Huntel Global" />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-9.png"
+                  alt="Huntel Global project preview"
+                  loading="lazy"
+                /><span class="project__index">10</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Project 02</div> -->
+              <div class="project__body">
                 <h3>Huntel Global</h3>
                 <p>
                   Huntel Global, the specialized IT division of Drake
@@ -485,27 +438,23 @@
                   professionals with organizations seeking the perfect fit for
                   Contract, Temporary and Permanent opportunities.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">Web Development</span>
-                  <span class="tag">Umbraco CMS</span>
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>Web Development</span><span>Umbraco CMS</span>
+                  </div>
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-9.png" alt="Vertical Talent" />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-10.png"
+                  alt="We Express project preview"
+                  loading="lazy"
+                /><span class="project__index">11</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Project 02</div> -->
+              <div class="project__body">
                 <h3>We Express</h3>
                 <p>
                   Wide Wide World Express Corporation formerly known as DHL
@@ -515,26 +464,23 @@
                   started courier service in the Philippines, known to be the
                   first in the Asia Pacific Region.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">UI-UX Design & Development</span>
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>UI-UX Design & Development</span>
+                  </div>
                 </div>
               </div>
             </article>
 
-            <article class="project-card fade-in">
-              <div class="project-visual">
-                <div class="mockframe">
-                  <div class="mock-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mock-body">
-                    <img src="assets/images/img-10.png" alt="Vertical Talent" />
-                  </div>
-                </div>
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/images/img-11.png"
+                  alt="Ebury RE LLC project preview"
+                  loading="lazy"
+                /><span class="project__index">12</span>
               </div>
-
-              <div class="project-content">
-                <!-- <div class="project-index">Project 02</div> -->
+              <div class="project__body">
                 <h3>Ebury RE LLC</h3>
                 <p>
                   Ebury RE LLC is a real estate company that focuses on the
@@ -543,232 +489,181 @@
                   high-quality real estate solutions to clients and investors,
                   ensuring optimal returns on their investments.
                 </p>
-                <div class="tag-row">
-                  <span class="tag">UI-UX Design & Development</span>
+                <div class="project__meta">
+                  <div class="tags">
+                    <span>UI-UX Design & Development</span>
+                  </div>
                 </div>
               </div>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- SKILLS -->
-      <section id="skills">
-        <div class="wrap">
-          <div class="section-head fade-in">
-            <div class="eyebrow">Skills</div>
-            <h2>Tools of the craft.</h2>
+        <section
+          class="skills section-grid section"
+          id="skills"
+          aria-labelledby="skills-title"
+        >
+          <div class="section-marker"><span>03</span><span>SKILLS</span></div>
+          <div class="skills__heading reveal">
+            <p class="section-kicker">TOOLS OF THE CRAFT.</p>
+            <h2 id="skills-title">A working <em>system.</em></h2>
           </div>
-          <div class="skills-grid fade-in">
-            <div class="skill-col">
+          <div class="skills__list">
+            <article class="skill-group reveal">
+              <span class="skill-group__index">01</span>
               <h3>Design</h3>
-              <div class="skill-item">UI-UX Design</div>
-              <div class="skill-item">Figma</div>
-              <div class="skill-item">Adobe Photoshop</div>
-              <div class="skill-item">Adobe Illustrator</div>
-            </div>
-            <div class="skill-col">
+              <ul>
+                <li>UI-UX Design</li>
+                <li>Figma</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+              </ul>
+            </article>
+            <article class="skill-group reveal">
+              <span class="skill-group__index">02</span>
               <h3>Development</h3>
-              <div class="skill-item">HTML / Semantic HTML</div>
-              <div class="skill-item">CSS / CSS Animations</div>
-              <div class="skill-item">CSS Frameworks</div>
-              <div class="skill-item">SASS (CSS Processor)</div>
-              <div class="skill-item">JavaScript</div>
-              <div class="skill-item">jQuery</div>
-              <div class="skill-item">React.JS</div>
-              <div class="skill-item">Umbraco CMS</div>
-              <div class="skill-item">Word Press</div>
-              <div class="skill-item">Web Optimization</div>
-              <div class="skill-item">Sitefinity CMS</div>
-              <div class="skill-item">Laravel</div>
-              <div class="skill-item">CodeIgniter</div>
-            </div>
-            <div class="skill-col">
-              <h3>Tools</h3>
-              <div class="skill-item">Git</div>
-              <div class="skill-item">Azure</div>
-              <div class="skill-item">GitHub</div>
-              <div class="skill-item">Claude AI</div>
-              <div class="skill-item">VIDA AI</div>
-              <div class="skill-item">CoPilot</div>
-              <div class="skill-item">ChatGPT</div>
-            </div>
+              <ul>
+                <li>HTML / Semantic HTML</li>
+                <li>CSS / CSS Animations</li>
+                <li>CSS Frameworks</li>
+                <li>SASS (CSS Processor)</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>React.JS</li>
+                <li>Umbraco CMS</li>
+                <li>Word Press</li>
+                <li>Web Optimization</li>
+                <li>Sitefinity CMS</li>
+                <li>Laravel</li>
+                <li>CodeIgniter</li>
+              </ul>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- EXPERIENCE -->
-      <section id="experience">
-        <div class="wrap">
-          <div class="section-head fade-in">
-            <div class="eyebrow">Experience</div>
-            <h2>Where the work has taken me.</h2>
+        <section
+          class="experience section-grid section"
+          id="experience"
+          aria-labelledby="experience-title"
+        >
+          <div class="section-marker">
+            <span>04</span><span>EXPERIENCE</span>
           </div>
-          <div class="timeline fade-in">
-            <div class="t-item">
-              <div class="t-period">July 2022 - June 2025</div>
-              <h3>
-                Web Developer & Web Content Specialist<br />
-                <span class="t-org"><strong>CoreX Studio</strong></span>
-              </h3>
-              <p>
-                Designed and built reusable, high-performance frontend
-                components and structured UI blocks from intricate
-                specifications using React.js, .NET MVC, and .NET Core
-              </p>
-            </div>
-
-            <div class="t-item">
-              <div class="t-period">October 2016 - July 2022</div>
-              <h3>
-                UI/UX Developer & Front End Developer <br />
-                <span class="t-org"
-                  ><strong>Drake International Philippines</strong></span
-                >
-              </h3>
-              <p>
-                Architected and integrated custom design templates seamlessly
-                into Umbraco CMS, creating intuitive backend experiences for
-                content editors
-              </p>
-            </div>
-
-            <div class="t-item">
-              <div class="t-period">November 2013 - December 2014</div>
-              <h3>
-                Frontend Developer <br />
-                <span class="t-org"
-                  ><strong>We Support Inc. / Smart Communications</strong></span
-                >
-              </h3>
-              <p>
-                Transformed and migrated design templates into fully functional,
-                responsive layouts within Sitefinity CMS
-              </p>
-            </div>
-
-            <div class="t-item">
-              <div class="t-period">February 2011 - December 2014</div>
-              <h3>
-                Web Designer <br />
-                <span class="t-org"><strong>i4Asia Inc.</strong></span>
-              </h3>
-              <p>
-                Conceptualized wireframes and transformed static design
-                templates into dynamic, production-ready views integrated within
-                Laravel and CodeIgniter frameworks
-              </p>
-            </div>
+          <div class="experience__heading reveal">
+            <p class="section-kicker">WHERE THE WORK HAS TAKEN ME.</p>
+            <h2 id="experience-title">Selected <em>chapters.</em></h2>
           </div>
-        </div>
-      </section>
+          <div class="timeline">
+            <article class="timeline__item reveal">
+              <div class="timeline__date">July 2022 - June 2025</div>
+              <div class="timeline__body">
+                <h3>Web Developer & Web Content Specialist</h3>
+                <p class="timeline__company">CoreX Studio</p>
+                <p>
+                  Designed and built reusable, high-performance frontend
+                  components and structured UI blocks from intricate
+                  specifications using React.js, .NET MVC, and .NET Core
+                </p>
+              </div>
+            </article>
+            <article class="timeline__item reveal">
+              <div class="timeline__date">October 2016 - July 2022</div>
+              <div class="timeline__body">
+                <h3>UI/UX Developer & Front End Developer</h3>
+                <p class="timeline__company">Drake International Philippines</p>
+                <p>
+                  Architected and integrated custom design templates seamlessly
+                  into Umbraco CMS, creating intuitive backend experiences for
+                  content editors
+                </p>
+              </div>
+            </article>
+            <article class="timeline__item reveal">
+              <div class="timeline__date">November 2013 - December 2014</div>
+              <div class="timeline__body">
+                <h3>Frontend Developer</h3>
+                <p class="timeline__company">
+                  We Support Inc. / Smart Communications
+                </p>
+                <p>
+                  Transformed and migrated design templates into fully
+                  functional, responsive layouts within Sitefinity CMS
+                </p>
+              </div>
+            </article>
+            <article class="timeline__item reveal">
+              <div class="timeline__date">February 2011 - December 2014</div>
+              <div class="timeline__body">
+                <h3>Web Designer</h3>
+                <p class="timeline__company">i4Asia Inc.</p>
+                <p>
+                  Conceptualized wireframes and transformed static design
+                  templates into dynamic, production-ready views integrated
+                  within Laravel and CodeIgniter frameworks
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
 
-      <!-- CONTACT -->
-      <section id="contact">
-        <div class="wrap">
-          <div class="contact-grid">
-            <div class="contact-lede fade-in">
-              <div class="eyebrow">Contact</div>
-              <h2>
-                Have a project in mind or an opportunity to discuss?<br />Let's
-                create something meaningful together.
+        <section
+          class="contact section"
+          id="contact"
+          aria-labelledby="contact-title"
+        >
+          <div class="contact__grid section-grid">
+            <div class="section-marker">
+              <span>05</span><span>CONTACT</span>
+            </div>
+            <div class="contact__content reveal">
+              <p class="section-kicker">
+                HAVE A PROJECT IN MIND OR AN OPPORTUNITY TO DISCUSS?
+              </p>
+              <h2 id="contact-title">
+                Let's create something <em>meaningful</em> together.
               </h2>
               <p>
                 Whether it's a full product build, a design system, or a single
                 tricky interface — I'd love to hear about it.
               </p>
-            </div>
-
-            <div class="contact-lede fade-in">
-              <div class="contact-links">
-                <a href="mailto:darwinolivar@yahoo.com">
-                  <span
-                    ><span class="l-label">EMAIL</span
-                    ><br />darwinolivar@yahoo.com</span
-                  >
-                  <span class="arrow">↗</span>
-                </a>
-                <a href="tel:+639760206344">
-                  <span
-                    ><span class="l-label">Contact Number</span><br />+63 976
-                    020 6344</span
-                  >
-                  <span class="arrow">↗</span>
-                </a>
-                <a
-                  href="linkedin.com/in/darwin-olivar-6b52008b"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <span
-                    ><span class="l-label">LINKEDIN</span
-                    ><br />linkedin.com/in/darwin-olivar-6b52008b</span
-                  >
-                  <span class="arrow">↗</span>
-                </a>
-                <a
-                  href="https://ph.jobstreet.com/profiles/darwin-olivar-Bj8zl9gsRl"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <span
-                    ><span class="l-label">Jobstreet</span
-                    ><br />https://ph.jobstreet.com/profiles/darwin-olivar-Bj8zl9gsRl</span
-                  >
-                  <span class="arrow">↗</span>
-                </a>
-                <a
-                  href="https://github.com/darwinolivar/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <span
-                    ><span class="l-label">GITHUB</span
-                    ><br />https://github.com/darwinolivar/</span
-                  >
-                  <span class="arrow">↗</span>
-                </a>
-
-                <a
-                  href="https://www.behance.net/daidara"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <span
-                    ><span class="l-label">Behance</span
-                    ><br />https://www.behance.net/daidara</span
-                  >
-                  <span class="arrow">↗</span>
-                </a>
-              </div>
+              <a class="contact__email" href="mailto:darwinolivar@yahoo.com"
+                >darwinolivar@yahoo.com <span>↗</span></a
+              >
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="wrap footer-inner">
-        <span>© 2026 Darwin Olivar. All rights reserved.</span>
-      </div>
-    </footer>
-
-    <script>
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.15 },
-      );
-
-      document
-        .querySelectorAll(".fade-in")
-        .forEach((el) => observer.observe(el));
-    </script>
+          <div class="contact__links section-grid">
+            <a href="tel:+639760206344"
+              ><span>CONTACT NUMBER</span>+63 976 020 6344 ↗</a
+            ><a
+              href="https://linkedin.com/in/darwin-olivar-6b52008b"
+              target="_blank"
+              rel="noreferrer"
+              ><span>LINKEDIN</span>linkedin.com/in/darwin-olivar-6b52008b ↗</a
+            ><a
+              href="https://ph.jobstreet.com/profiles/darwin-olivar-Bj8zl9gsRl"
+              target="_blank"
+              rel="noreferrer"
+              ><span>JOBSTREET</span
+              >https://ph.jobstreet.com/profiles/darwin-olivar-Bj8zl9gsRl ↗</a
+            ><a
+              href="https://github.com/darwin-olivar/"
+              target="_blank"
+              rel="noreferrer"
+              ><span>GITHUB</span>https://github.com/darwin-olivar/ ↗</a
+            ><a
+              href="https://www.behance.net/daidara"
+              target="_blank"
+              rel="noreferrer"
+              ><span>BEHANCE</span>https://www.behance.net/daidara ↗</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div>© 2026 Darwin Olivar. All rights reserved.</div>
+        <div>DESIGNED / DEVELOPED WITH INTENT <span>●</span></div>
+      </footer>
+    </div>
   </body>
 </html>
